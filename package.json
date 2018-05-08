@@ -1,0 +1,21 @@
+{
+  "name": "denomination-engine",
+  "version": "1.0.0",
+  "description": "idr denomination",
+  "author": "Sigit Prabowo",
+  "private": true,
+  "scripts": {
+    "dev": "nuxt",
+    "build": "nuxt build",
+    "start": "nuxt start",
+    "generate": "nuxt generate"
+  },
+  "dependencies": {
+    "nuxt": "^1.0.0",
+    "bootstrap-vue": "^1.0.2",
+    "bootstrap": "^4.0.0-beta.2"
+  },
+  "devDependencies": {
+    "cross-env": "^5.0.1"
+  }
+}
