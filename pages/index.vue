@@ -78,6 +78,7 @@ export default {
       let lastArr = arrPecahan[arrPecahan.length - 1]
       let hasil = arrPecahan.map(function(item, index, array){
         bagi = parseInt(n/item)
+        console.log(bagi)
         if (bagi !== 0) {
           sisa = n % item
           n = sisa
@@ -110,7 +111,7 @@ export default {
         }
         // console.log(hasilValid)
         this.currencyAsk = this.currency
-        this.result = this.distribusiPecahan(hasilValid.replace('.', ''))
+        this.result = this.distribusiPecahan(hasilValid.replace(/\./g, ''))
         this.status = true
       } else {
         this.invalid = true
