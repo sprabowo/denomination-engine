@@ -110,8 +110,9 @@ export default {
           this.invalid = true
         }
         // console.log(hasilValid)
-        this.currencyAsk = this.currency
-        this.result = this.distribusiPecahan(hasilValid.replace(/\./g, ''))
+        let normalisasiHasil = hasilValid.replace(/\./g, '')
+        this.currencyAsk = normalisasiHasil
+        this.result = this.distribusiPecahan(normalisasiHasil)
         this.status = true
       } else {
         this.invalid = true
